@@ -20,8 +20,8 @@ let iterarLibros = (data) => {
             <div class="book-back">
             <h5>${libro.título}</h5>
             <p class="autor">${libro.autor}</p>
-            <p class="raiting"><b>Raiting: <b>${libro.raiting}</p>
-            <p><i class="bi bi-star-fill"></i></p>
+            <p class="rating"><b>rating:</p>
+            <p class="rating" id='${libro.título}_rating'</p>
             </div>
             </div>
         </div>
@@ -29,9 +29,23 @@ let iterarLibros = (data) => {
         let portadaLibro = document.getElementById(`${libro.título}`)
         portadaLibro.style.backgroundImage = "url(" + ` ${libro.portada}` + ")"
         portadaLibro.style.backgroundSize = "cover"
+
+        //traerse el id dinámicamente
+        let ratingParagraph = document.getElementById(`${libro.título}_rating`)
+
+        // get rating func
+        getRating(libro.rating, ratingParagraph)
     }
 }
 
+
+//traer rating por libro de manera dinámica
+let getRating = (rating, id) => {
+    console.log(rating, id)
+    for (let i = 0; i < rating; i++) {
+        id.innerHTML += '<i class="bi bi-star-fill"></i>' // ícono de bootstrap
+    }
+}
 
 
 //1. Arreglo libros favoritos

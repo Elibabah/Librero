@@ -3,49 +3,49 @@
             "título": "La vida breve",
             "autor": "Onetti",
             "clasificación": "novela latinoamericana",
-            "raiting": 5,
+            "rating": 5,
             "portada": "./assets/portadas/breve.jpg"
         },
         {
             "título": "Niebla",
             "autor": "Unamuno",
             "clasificación": "novela española",
-            "raiting": 5,
+            "rating": 5,
             "portada": "./assets/portadas/niebla.jpg"
         },
         {
             "título": "Quijote",
             "autor": "Cervantes",
             "clasificación": "novela española",
-            "raiting": 5,
+            "rating": 5,
             "portada": "./assets/portadas/quijote.jpg"
         },
         {
             "título": "Cien años de soledad",
             "autor": "García Márquez",
             "clasificación": "novela del boom",
-            "raiting": 5,
+            "rating": 3,
             "portada": "./assets/portadas/soledad.jpg"
         },
         {
             "título": "Pedro Páramo",
             "autor": "Juan Rulfo",
             "clasificación": "novela de mexicana",
-            "raiting": 5,
+            "rating": 5,
             "portada": "./assets/portadas/paramo.jpg"
         },
         {
             "título": "La metamorfosis",
             "autor": "Kafka",
             "clasificación": "nueva novela",
-            "raiting": 5,
+            "rating": 5,
             "portada": "./assets/portadas/kafka.jpg"
         },
         {
             "título": "Metamorfosis",
             "autor": "Ovidio",
             "clasificación": "épica latina",
-            "raiting": 5,
+            "rating": 4,
             "portada": "./assets/portadas/ovidio.jpg"
         }
     ]
