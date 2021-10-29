@@ -1,0 +1,112 @@
+body {
+    display: grid;
+    width: auto;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 3fr 0.3fr;
+    grid-template-areas: /* para que sea responsiva a las áreas*/
+    "header header header" "section main main" "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    /* que se enrolle según tamaño*/
+    gap: 1em 1em;
+}
+
+section {
+    grid-area: section;
+    background-color: crimson;
+}
+
+footer {
+    grid-area: footer;
+    background-color: darkblue;
+}
+
+.book {
+    background-image: url(/assets/Old_Book.png);
+    background-size: cover;
+    width: 10em;
+    height: 15em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1.5em;
+    text-align: center;
+    color: #efb810;
+}
+
+
+/* CSS BOOK FLIP TRANSITIONS*/
+
+.book-container {
+    width: 10em;
+    height: 15em;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.book-portrait {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.book-portrait:hover {
+    transform: rotateY(180deg);
+}
+
+.book-cover,
+.book-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Internet Explorer compatibility*/
+    backface-visibility: hidden;
+}
+
+.book-cover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.book-back {
+    background-image: url("./assets/Old_Book.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /*display: flex;
+    justify-content: left;
+    align-items: initial;*/
+    border-radius: 10px;
+    padding: 1.5em;
+    text-align: center;
+    color: #efb810;
+    transform: rotateY(180deg);
+}
+
+.autor {
+    color: blanchedalmond;
+}
+
+.raiting {}
