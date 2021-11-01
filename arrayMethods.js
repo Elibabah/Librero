@@ -43,7 +43,7 @@ let iterarLibros = (data) => {
 let getRating = (rating, id) => {
     console.log(rating, id)
     for (let i = 0; i < rating; i++) {
-        id.innerHTML += '<i class="bi bi-star-fill"></i>' // ícono de bootstrap
+        id.innerHTML += '<i class="bi bi-star-fill"></i>' // ícono de bootstrap para estrella
     }
 }
 
